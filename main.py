@@ -1,12 +1,9 @@
 import json
 
 def Show_expenses():
-    print("Jedzenie: " + str(Categories[0]["jedzenie"]))
-    print("Transport: " + str(Categories[0]["transport"]))
-    print("Alkohol: " + str(Categories[0]["alkohol"]))
-    print("Rozrywka: " + str(Categories[0]["rozrywka"]))
-    print("Edukacja: " + str(Categories[0]["edukacja"]))
-    print("Inne: " + str(Categories[0]["inne"]))
+    Categories_sorted = sorted(Categories[0].items(), key=lambda x: x[1], reverse=True)
+    for key, value in Categories_sorted:
+        print(key + ": " + str(value))
 
 def Add_expense(user_choice2):
     print("Wydatek:")
