@@ -1,0 +1,4 @@
+Na razie uproszczony program
+Możliwości w początkowym menu: dodanie wydatku według kategorii, wyświetlenie posortowanych malejąco według kategorii wydatków, wyjście
+Wydatki będą przetrzymywane w jsonie
+6 kategorii: jedzenie, transport, alkohol, rozrywka, edukacja, inne
